@@ -6,13 +6,13 @@ A six-month comparative Spotify streaming analysis across 26 tracks (13 Afrobeat
 By Ekene Ahuche · Hipstarr Music Research · Lagos, 2026
 @ekenemike_ · ekenemike.substack.com
 
-Problem
+Problem:
 The dominant narrative around Afrobeats streaming is one of global breakthrough. But a closer look at the data raises a harder question: is Afrobeats building genuine multi-market catalogue assets, or is diaspora-concentrated consumption on Spotify being misread as mainstream crossover?
 Two specific problems motivated this research:
 The measurement problem. Standard 6-month retention calculations apply a single methodology to genres with structurally different rollout patterns. Afrobeats tracks often flatline in their initial viral market before building momentum in secondary markets. Applying a Latin Pop measurement framework to an Afrobeats track produces misleading numbers — not because the music performs differently, but because the lifecycle is different.
 The valuation problem. The Spotify catalogue valuation gap between Afrobeats and Latin Pop is visible and large. But nobody had examined what is actually driving it. Is it audience loyalty? Royalty rates? Geography? Or something else?
 
-Approach
+Approach:
 Latin Pop was chosen as the structural comparator because it achieved genuine verified multi-market Spotify scale during the same period (2019 to 2024), operates from a similarly concentrated home-language audience, and has a comparable number of globally recognised artists. It is the most defensible like-for-like comparison available.
 The analysis rejects aggregate streaming volume as a primary metric. Instead it focuses on three questions that matter for catalogue value:
 
