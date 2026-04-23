@@ -23,7 +23,7 @@ Where are the listeners, and how concentrated is that geography? (city-level ide
 A custom correction framework — the Data-Lifecycle Mismatch Framework — was developed to neutralise three systematic errors found in standard streaming retention analysis before any genre comparison was made.
 The Python analysis uses scipy.optimize.curve_fit to fit exponential decay models to the post-peak weekly stream trajectory of each track. This produces a lambda coefficient (λ) — the mathematically precise decay rate — independent of peak size or absolute stream count.
 
-Steps
+Steps:
 Step 1 — Track selection and inclusion criteria
 Tracks must have charted in a minimum of 2 markets outside their home country on Spotify's published weekly Top 200. This threshold is not arbitrary — it directly tests the multi-market penetration question at the centre of the research.
 This criterion excluded several culturally prominent Afrobeats tracks (the Asake catalogue, Buga by Kizz Daniel, Free Mind by Tems) because they did not meet the multi-market Spotify chart threshold at time of measurement. That exclusion is itself a finding.
@@ -54,23 +54,23 @@ Ownership of the visual language. Tableau and Power BI produce output that looks
 Portfolio signal. Building a production-grade interactive dashboard in raw HTML, CSS, and JavaScript — with four working Chart.js visualisations, a 26-row data table, nine navigable tabs, and five embedded Python charts — demonstrates a different skill set from dragging fields into a BI tool. It shows you can build, not just configure.
 Looker Studio was used separately for the hipstarr_looker_master.csv dataset (32 columns, 26 rows) as a data verification and quick-exploration layer. That is the appropriate use case for a BI tool in this workflow — not the final deliverable.
 
-Assumptions
+Assumptions:
 Retention methodology. The 6-month retention window is measured from the primary market peak, not the global chart debut. For tracks where the primary market and the viral market are different (example: Calm Down Remix peaked globally but its primary audience market by Spotify geography is the US), the calculation uses the US market for both numerator and denominator.
 Spotify royalty rates (Script 04). Per-stream rate assumptions are industry averages and are used for modelling only. Actual rates vary by subscription tier, territory licensing agreements, and time period. Rates used: US/UK/FR/DE/AU/CA at $0.004 per stream, LATAM at $0.0022, Nigeria at $0.0004, other markets at $0.0020.
 Spotify-only scope. All stream counts, retention calculations, and valuation estimates are Spotify only. They exclude Apple Music, YouTube Music, Tidal, Amazon Music, and all other DSPs. Total cross-platform values would be higher for all tracks.
 Catalogue multiples. Industry multiples of 10x to 20x annual revenue are applied based on retention tier. These are reference points from observed catalogue transactions, not guaranteed valuations. Tracks with retention above 40% qualify for 20x; 25 to 40% for 16x; below 25% for 10x.
 Inclusion bias. The sample skews toward tracks with sufficient multi-market Spotify chart data. Tracks with strong streaming numbers concentrated in a single market were excluded. This means the Afrobeats sample is more representative of crossover-adjacent tracks than of the genre's median commercial output.
 
-Result
-MetricAfrobeatsLatin PopTracks in sample1313Avg 6-month Spotify retention30.7%33.0%Statistical gap2.3 percentage points — near parityAvg Spotify stream half-life13.7 weeks11.1 weeksAvg lambda (decay rate)0.07840.0481Slowest decaySoso — λ 0.0033, 29w half-lifeFastest decayBzrp Vol. 52 — λ 0.1284, 5w half-lifeLagos as #1 Spotify city100% of Afrobeats tracks—Nigerian city concentration47 to 65% per track—Spotify-only catalogue value$28.9M (13 tracks)$87.4M (13 tracks)Valuation gap3.0x — driven by stream volume, not royalty rates
+Result:
+Metric Afrobeats vs Latin Pop Tracks in sample;13 vs 13. Avg 6-month Spotify retention30.7% vs33.0%. Statistical gap: 2.3 percentage points — near parityAvg Spotify stream half-life 13.7 weeks for Afrobeats vs 11.1 weeks for Latin Pop. Avg lambda (decay rate)0.07840.0481 Slowest decay Soso — λ 0.0033, 29w half-life. Fastest decay Bzrp Vol. 52 — λ 0.1284, 5w half-life. Lagos as #1 Spotify city, 100% of Afrobeats tracks—Nigerian city concentration 47 to 65% per track. Spotify-only catalogue value $28.9M (13 tracks) vs $87.4M (13 tracks) Valuation gap3.0x — driven by stream volume, not royalty rates
 The headline finding: After applying the Data-Lifecycle Mismatch correction, Afrobeats and Latin Pop are in near-statistical parity on 6-month Spotify retention. On the more precise half-life measure, Afrobeats audiences actually last longer (13.7w vs 11.1w). The 3x Spotify valuation gap is explained entirely by stream volume — Latin Pop tracks accumulate 6 to 10 times more total Spotify streams per track. Both genres earn comparably per stream in high-yield markets.
 The structural finding: Afrobeats is not failing at durability. It is succeeding at community penetration — and that community routes through Western Spotify servers at Western royalty rates. The ceiling is a demographic scale gap, not a quality gap.
 
-Track Data
+Track Data:
 Afrobeats (13 tracks)
-TrackArtistHalf-LifeLambdaSpotify RetentionSosoOmah Lay29w0.003358.8%Calm Down RemixRema ft. Selena Gomez25w0.047848.2%Peru RemixFireboy DML ft. Ed Sheeran24w0.037239.9%SoundgasmRema16w0.069544.1%EssenceWizkid ft. Tems15w0.074739.0%Last LastBurna Boy17w0.032336.6%Love NwantitiCKay21w0.067532.7%Ku Lo SaOxlade11w0.043529.7%RushAyra Starr10w0.068829.6%It's PlentyBurna Boy2w0.011027.9%UnavailableDavido ft. Musa Keys2w0.060912.2%AttentionOmah Lay ft. Justin Bieber3w0.02750.0%Peru OriginalFireboy DML3w0.47550.0%
+Track, Artist, Half-Life, Lambda, Spotify Retention:Soso, Omah Lay, 29w, 0.003358.8%. Calm Down Remix, Rema ft. Selena Gomez, 25w, 0.047848.2%. Peru Remix, Fireboy DML ft. Ed Sheeran, 24w, 0.037239.9%. Soundgasm, Rema, 16w, 0.069544.1%. Essence, Wizkid ft. Tems, 15w, 0.074739.0%. Last Last, Burna Boy, 17w, 0.032336.6%. Love Nwantiti, CKay, 21w, 0.067532.7%. Ku Lo Sa, Oxlade, 11w, 0.043529.7%. Rush, Ayra Starr, 10w, 0.068829.6%. It's Plenty, Burna Boy, 2w, 0.011027.9%. Unavailable, Davido ft. Musa Keys, 2w, 0.060912.2%, Attention, Omah Lay ft. Justin Bieber, 3w, 0.02750.0%. Peru Original, Fireboy DML, 3w, 0.47550.0%.
 Latin Pop (13 tracks)
-TrackArtistHalf-LifeLambdaSpotify RetentionNeveritaBad Bunny7w0.020071.7%Tití Me PreguntóBad Bunny20w0.036553.2%ProvenzaKarol G28w0.014252.3%Me Porto BonitoBad Bunny ft. Chencho Corleone22w0.024646.5%YonaguniBad Bunny10w0.032044.8%Bzrp Vol. 52Quevedo ft. Bizarrap5w0.128426.1%Moscow MuleBad Bunny3w0.042028.7%TelepatíaKali Uchis14w0.035428.6%Todo De TiRauw Alejandro8w0.029325.3%BichotaKarol G15w0.044223.0%TQGKarol G ft. Shakira5w0.051818.5%Bzrp Vol. 53Shakira ft. Bizarrap4w0.086010.9%El ApagónBad Bunny3w0.08150.0%
+Track, Artist, Half-Life, Lambda, Spotify Retention: Neverita, Bad Bunny, 7w, 0.020071.7%. Tití Me Preguntó, Bad Bunny, 20w, 0.036553.2%. Provenza, Karol G, 28w, 0.014252.3%. Me Porto Bonito, Bad Bunny ft. Chencho Corleone, 22w, 0.024646.5%. Yonaguni, Bad Bunny, 10w, 0.032044.8%. Bzrp Vol. 52, Quevedo ft. Bizarrap, 5w, 0.128426.1%. Moscow Mule, Bad Bunny, 3w, 0.042028.7%. Telepatía, Kali Uchis, 14w, 0.035428.6%. Todo De Ti, Rauw Alejandro, 8w, 0.029325.3%. Bichota, Karol G, 15w, 0.044223.0%. TQG, Karol G ft. Shakira, 5w, 0.051818.5%. Bzrp Vol. 53, Shakira ft. Bizarrap, 4w, 0.086010.9%. El Apagón, Bad Bunny, 3w, 0.08150.0%
 
 Repository Structure
 hipstarr-streaming-decay-analysis/
